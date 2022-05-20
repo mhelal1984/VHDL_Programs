@@ -5,7 +5,7 @@ USE ieee.std_logic_arith.ALL;
 ---------------------------------
 ENTITY parity2 IS --declare an Entity called "parity2" with the following charachtaristics
 
-GENERIC (nbits : positive := 3); -- number of bits in the form of Logic vector (generic means a Constant that will not be changed in testbench)
+GENERIC (nbits : positive := 4); -- number of bits in the form of Logic vector (generic means a Constant that will not be changed in testbench)
 
 PORT (d : IN std_logic_vector(nbits-1 DOWNTO 0); -- Take input of a vector with length [ (nbits-1) :0]
 odd : OUT std_logic; -- odd Flag
